@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class RecipeCard extends StatelessWidget {
   String title;
-   String rating;
+  String rating;
   String cookTime;
   String thumbnailUrl;
   RecipeCard({
@@ -76,7 +76,15 @@ class RecipeCard extends StatelessWidget {
                         size: 18,
                       ),
                       SizedBox(width: 7),
-                      Text(rating),
+                      Text(
+                        rating,
+                        style: TextStyle(
+                          fontSize: 14,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
+                        textAlign: TextAlign.center,
+                      ),
                     ],
                   ),
                 ),
@@ -95,7 +103,18 @@ class RecipeCard extends StatelessWidget {
                         size: 18,
                       ),
                       SizedBox(width: 7),
-                      Text(cookTime),
+                      Container(
+                        width: 100,
+                        child: Text(
+                          cookTime,
+                          style: TextStyle(
+                            fontSize: 14,
+                          ),
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 2,
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
                     ],
                   ),
                 )
