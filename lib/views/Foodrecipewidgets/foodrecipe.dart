@@ -99,7 +99,7 @@ class RecipeCard extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.schedule,
-                        color: Colors.yellow,
+                        color: Colors.red,
                         size: 18,
                       ),
                       SizedBox(width: 7),
